@@ -2,7 +2,7 @@
 
 **Deterministic Voice AI Infrastructure & Compiler-Aware Agent Tooling**
 
-RingZero Systems engineers zero-allocation media pipelines (Linux `io_uring`, AVX2 SIMD) and out-of-band context distillation for production AI systems.
+RingZero Systems engineers zero-allocation media pipelines (Linux `io_uring`, AVX2 SIMD), out-of-band context distillation, and ground-truth verification oracles for production AI systems.
 
 ---
 
@@ -10,7 +10,7 @@ RingZero Systems engineers zero-allocation media pipelines (Linux `io_uring`, AV
 
 | Repository | Stack | Primary Capability |
 | :--- | :--- | :--- |
-| **[cortx](https://github.com/ringzerosystems/cortx)** | Rust 2024 · AST Slicing · TUI | Compiler-aware AST context distillation & out-of-band advisory hooks for Claude Code / AI coding agents. Sub-millisecond parsing, zero byte-offset drift. |
+| **[cortx](https://github.com/ringzerosystems/cortx)** | Rust 2024 · AST Slicing · Kani BMC · DST | Compiler-aware AST context distillation, out-of-band advisory daemon, and 5 ground-truth verification oracles (DST, differential fuzzing, Kani BMC, invariants, Sans-I/O state machines) for AI coding agents. Zero byte-offset drift. |
 | **[omnic](https://github.com/ringzerosystems/omnic)** | Go 1.27+ · Bubble Tea | Concurrent local communications emulator for Twilio (SMS/MMS), Meta WhatsApp Cloud API (v26.0), and Telegram Bot API with carrier fault injection & mobile handset TUI. |
 
 ### Real-Time Voice Infrastructure (Upcoming Releases)
@@ -29,6 +29,6 @@ RingZero Systems engineers zero-allocation media pipelines (Linux `io_uring`, AV
 All RingZero Systems open-source engines are dual-licensed under **AGPL-3.0** and commercial terms.
 
 - **Commercial Licenses:** Exempts proprietary SaaS and commercial deployments from AGPLv3 copyleft obligations without disclosing proprietary source code.
-- **Fixed-Scope Architecture Sprints:** Turnkey 2-weekend engineering deliverables ($7.5k–$15k flat rate, 50% upfront, fully tested async PR/container handoff). Zero daytime meeting interference.
+- **Fixed-Scope Architecture Sprints:** Turnkey 2-weekend engineering deliverables (flat rate, 50% upfront, fully tested async PR/container handoff). Zero daytime meeting interference.
 
 **Inquiries & Proposals:** [`mark@ringzerosystems.com`](mailto:mark@ringzerosystems.com) · [`mark@r0sys.dev`](mailto:mark@r0sys.dev) · [ringzerosystems.com](https://ringzerosystems.com)
