@@ -12,6 +12,7 @@ RingZero Systems engineers zero-allocation media pipelines (Linux `io_uring`, AV
 | :--- | :--- | :--- |
 | **[cortx](https://github.com/ringzerosystems/cortx)** | Rust 2024 · AST Slicing · Kani BMC · DST | Compiler-aware AST context distillation, out-of-band advisory daemon, and 5 ground-truth verification oracles (DST, differential fuzzing, Kani BMC, invariants, Sans-I/O state machines) for AI coding agents. Zero byte-offset drift. |
 | **[omnic](https://github.com/ringzerosystems/omnic)** | Go 1.27+ · Bubble Tea | Concurrent local communications emulator for Twilio (SMS/MMS), Meta WhatsApp Cloud API (v26.0), and Telegram Bot API with carrier fault injection & mobile handset TUI. |
+| **[urtp](https://github.com/ringzerosystems/urtp)** | C23 · `io_uring` `SQPOLL` | Zero-syscall RTP & WebRTC (ICE + DTLS-SRTP) media proxy with Kamailio/OpenSIPS `ng` protocol parity. |
 
 ### Real-Time Voice Infrastructure (Upcoming Releases)
 
@@ -20,7 +21,6 @@ RingZero Systems engineers zero-allocation media pipelines (Linux `io_uring`, AV
 | **MachAudio** | C11 · `io_uring` · AVX2 | 42μs audio DSP daemon, polyphase FIR resampling & inline Micro-GRU VAD (~450 streams/core). | *Coming Soon* |
 | **HydraVox** | Go 1.26+ | Real-time TTS worker pool with Head-of-Line mid-sentence hot-standby failover (ElevenLabs ↔ Deepgram Aura). | *Coming Soon* |
 | **WSRTPBridge** | C23 · `io_uring` | Share-nothing, lock-free WebSocket-to-SIP/RTP media bridge sustaining 4,000 concurrent calls at <1% CPU. | *Coming Soon* |
-| **urtp** | C23 · `io_uring` `SQPOLL` | Zero-syscall RTP & WebRTC (ICE + DTLS-SRTP) media proxy with Kamailio/OpenSIPS `ng` protocol parity. | *Coming Soon* |
 
 ---
 
